@@ -1,4 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to My ePortfolio
+
+All this additional information will soon be changed and updated.
+Stay tooned!
+
+My Stuff --
 
 You can use the [editor on GitHub](https://github.com/ksanchez1234/my_ePortfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
