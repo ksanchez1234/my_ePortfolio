@@ -1,4 +1,6 @@
-<h1 style: "centered"> Welcome to My ePortfolio </h1>
+# Header 1
+Welcome to My ePortfolio
+
 All this additional information will soon be changed and updated. Stay tooned!
 
 My Stuff --
