@@ -1,8 +1,11 @@
-## Welcome to GitHub Pages
+<h1> Welcome to My ePortfolio </h1>
+All this additional information will soon be changed and updated. Stay tooned!
 
-You can use the [editor on GitHub](https://github.com/ksanchez1234/my_ePortfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+My Stuff --
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run Jekyll to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
