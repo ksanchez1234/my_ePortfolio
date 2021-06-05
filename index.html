@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My ePortfolio</title>
+
+    <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"></script>
+
 </head>
 <body>
     <section>
         <!--Navigation Menu-->
         <nav>
             <!--Personal Logo-->
-            <a href="#" class="logo">Karina Sanchez</a>
+            <a href="https://github.com/ksanchez1234" class="logo">Karina Sanchez</a>
             <!--Menu-->
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="#projects_section">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
         <!--Text-->
@@ -26,8 +32,8 @@
             <p>Hello,</p>
             <p>I'm Karina</p>
             <p>An Entry Level Software Engineer <br> Who is ready to Conquer the World!</p>
-            <button class="hire-btn">Hire Me!</button>
-            <button class="download-cv">Download My Resume</button>
+            <button class="hire-btn" id="contact_button"><a href="/contact.html">Hire Me!</a></button>
+            <button class="download-cv"><a class="download-cv" href="/images/Resume - Sanchez, Karina.pdf">Download My Resume</a></button>
         </div>
 
         <!--My Image-->
@@ -40,7 +46,7 @@
         <!--Image-->
         <img src="images/myPic1.png" />
         <!--About Text-->
-        <div class="about-text">
+        <div class="about-text" id="about_section">
             <p>About Me</p>
             <p>Entry Level Software Engineer</p>
             <p>Hello, My name is Karina Sanchez. 
@@ -69,13 +75,13 @@
             </p>
 
             <!--Button-->
-            <button class="hire-btn">Hire Me!</button>
-            <button class="download-cv">Download My Resume</button>
+            <button class="hire-btn2" id="contact_button"><a class="hire-btn2" href="/contact.html">Hire Me!</a></button>
+            <button class="download-cv2"><a class="download-cv2" href="/images/Resume - Sanchez, Karina.pdf">Download My Resume</a></button>
         </div>
     </div>
 
      <!--My Projects-->
-     <div class="projects">
+     <div class="projects" id="projects_section">
          <!--Projects Text-->
          <div class="projects-text">
             <p>My Projects</p>
@@ -85,28 +91,49 @@
          </div>
          <!--Projects Boxes-->
          <div class="box-container">
+
              <!--Box 1 - Software Design-->
-             <div>
-                 <button class="box-1"></button>
-             </div>
+            <div class="box-1">
+                <img src="images/softwareDesign.png" alt="Software Design" style="width:90%">
+                <button class="btn"><a href="https://www.w3schools.com/">View Code</a></button>
+            </div>
 
              <!--Box 2 - Algorithms-->
-             <div>
-                <button class="box-2"></button>
+            <div class="box-2">
+                <img src="images/algorithms.png" alt="Algorithms" style="width:80%">
+                <button class="btn"><a href="https://www.w3schools.com/">View Code</a></button>
             </div>
 
             <!--Box 3 - Databases-->
-            <div>
-                 <button class="box-3"></button>
+            <div class="box-3">
+                <img src="images/databases.jpg" alt="Database" style="width:80%">
+                <button class="btn"><a href="https://www.w3schools.com/">View Code</a></button>
             </div>
+
          </div>
      </div>
 
      <!--Contact Me-->
-     <div class="contact-me">
+     <div class="contact-me" id="contact_section">
         <p>Have some feedback? Like my work?</p>
-        <button>Contact Me</button>
+        <button id="contact_button"><a href="/contact.html">Contact Me</a></button>
      </div>
+
+     <!--Footer-->
+     <footer>
+         <p>I hope you have enjoyed learning about me and browsing through my work.</p>
+         <p>Follow me on Social Media!</p>
+
+         <!--Social Media-->
+         <div class="social-icons">
+             <a href="https://www.facebook.com/profile.php?id=100001646416730"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.instagram.com/chapiz2014/"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.snapchat.com/add/karriiiiina"><i class="fab fa-snapchat"></i></a>
+         </div>
+
+         <p>Have a blessed day! -K.S.</p>
+
+     </footer>
 
 
 </body>
