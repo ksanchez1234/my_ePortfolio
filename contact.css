@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Documentation */
+body {
+  background-color: #f6f5f5;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Top Section with Contact Me Heading*/
+section {
+  width: 100%;
+  height: 32vh;
+  background-color: rgb(247, 151, 207);
+  /*background-image: url("../images/backgroundPic.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo {
+  font-family: RoadTest;
+  color: #000000;
+  font-size: 22px;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+/* Contact Me - Container */
+.text-container p {
+  line-height: 0px;
+  margin: 45px 0px 25px;
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 50px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/*Container Button to Download Resume*/
+.download-resume {
+  color: white;
+  border: none;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+/* My Image - Contact Me */
+.myImage {
+  height: 560px;
+  position: absolute;
+  bottom: 100px;
+  left: 70%;
+  transform: translateX(-70%);
+}
+
+/* Contact Me Container Section */
+.contact-container1 {
+  width: 80%;
+  height: 750px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*Contact Image*/
+.contact-container1 img {
+  height: 450px;
+}
+/*Container Height*/
+.contact-text1 {
+  width: 700px;
+}
+/*Container Info (paragraphs)*/
+.contact-text1 p:nth-child(1) {
+  color: black;
+  font-size: 30px;
+  font-family: calibri;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.contact-text1 p:nth-child(2),
+.contact-text1 p:nth-child(3),
+.contact-text1 p:nth-child(4) {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: myriad pro;
+}
+.contact-text1 p:nth-child(5) {
+  color: #403e3e;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 25px;
+}
+.contact-text1 p:nth-child(6),
+.contact-text1 p:nth-child(7) {
+  color: black;
+  font-size: 15px;
+  font-family: myriad pro;
+  border-bottom: 2px solid white;
+}
+
+/* Contact Me */
+.contact-me {
+  width: 100%;
+  height: 500px;
+  /*background-image: url("../images/contact-me.png"); */
+  background-color: rgb(247, 151, 207);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me button {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*Hire Me Button*/
+.contact-text1 button {
+  width: 160px;
+  height: 30px;
+  color: white;
+  outline: none;
+  font-family: calibri;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+/*Footer*/
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+footer p {
+  font-family: calibri;
+}
+footer p:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  line-height: 10px;
+}
+
+/*Social Icons*/
+.social-icons {
+  display: flex;
+}
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 151, 207);
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.social-icons i {
+  color: black;
+}
+.social-icons a:hover {
+  background-color: white;
+  box-shadow: 2px 2px 12px black;
+  transition: all ease 0.5s;
+}
