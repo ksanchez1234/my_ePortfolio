@@ -106,16 +106,15 @@ nav ul li a {
   border: 2px solid black;
   color: #373636;
 }
-.hire-btn2 {
-  color: white;
-}
 
 .download-cv {
   background-color: black;
   color: white;
   border: none;
 }
-.download-cv2 {
+.hire-btn2,
+.download-cv2,
+.download-assessment {
   color: white;
   border: none;
 }
@@ -335,4 +334,5 @@ footer p:nth-child(2) {
   box-shadow: 2px 2px 12px black;
   transition: all ease 0.5s;
 }
+
 
