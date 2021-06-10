@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* CSS Documentation */
+body {
+  background-color: #f6f5f5;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Top Section with Database Heading*/
+section {
+  width: 100%;
+  height: 32vh;
+  background-color: rgb(247, 151, 207);
+  /*background-image: url("../images/backgroundPic.png"); */
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo {
+  font-family: RoadTest;
+  color: #000000;
+  font-size: 22px;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+/*Title of Page*/
+.title {
+  line-height: 0px;
+  margin: 45px 0px 25px;
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 50px;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Software Container Section */
+.database-container {
+  width: 80%;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.database-container img {
+  height: 300px;
+}
+.database-text {
+  width: 700px;
+}
+
+/*Container Info (paragraphs)*/
+.database-text p:nth-child(1) {
+  color: #403e3e;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 0px;
+}
+.database-text p:nth-child(2),
+.database-text p:nth-child(3),
+.database-text p:nth-child(4) {
+  color: rgb(92, 90, 90);
+  font-family: calibri;
+  font-size: 16px;
+}
+.database-text p:nth-child(5) {
+  color: black;
+  font-size: 14px;
+  font-family: myriad pro;
+  font-weight: bold;
+  line-height: 5px;
+}
+
+/*Review and Narrative Download Buttons*/
+/*GitHub and Code Download Buttons*/
+.download-review,
+.download-narrative,
+.view-github,
+.download-code {
+  width: 160px;
+  height: 30px;
+  color: white;
+  outline: none;
+  font-family: calibri;
+  background-color: gray;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+/*Carousel of Pictures */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/*Footer*/
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+footer p {
+  font-family: calibri;
+}
+footer p:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  line-height: 10px;
+}
+
+/*Social Icons*/
+.social-icons {
+  display: flex;
+}
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 151, 207);
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.social-icons i {
+  color: black;
+}
+.social-icons a:hover {
+  background-color: white;
+  box-shadow: 2px 2px 12px black;
+  transition: all ease 0.5s;
+}

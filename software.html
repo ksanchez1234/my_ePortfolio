@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Design Project</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="software.css"/>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <!--Navigation Menu-->
+        <nav>
+            <!--Personal Logo-->
+            <a href="https://github.com/ksanchez1234" class="logo">Karina Sanchez</a>
+            <!--Menu-->
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="algorithms.html" class="active">Algorithm Project</a></li>
+                <li><a href="databases.html" class="active">Database Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Text-->
+        <div class="title-container">
+            <p class="title">Software Design</p>
+        </div>
+
+    </section>
+
+    <!--Software Project-->
+    <div class="software-container">
+        <!--Image-->
+        <img src="images/softwareDesign.png" alt="software design"/>
+        <!--Software Text-->
+        <div class="software-text">
+        <!--Software Info-->
+            <p>My Calendar Application</p>
+            <p>During my computer science journey, I have had the opportunity to work on several different projects that have enhanced my technological skills. </p>
+            <p>A particular project that I wanted to better enhance, and further perfect was ‘My Calendar Application’.
+                    This artifact was the very first application I ever created with my current employer.
+                    As the name indicates, this is an application was set to tell time in the form of a calendar.
+                    It shows the current day, followed by the days of the week, the month and includes padding days, which are any additional days from the previous month.
+            <p>This application was meant to enhance my knowledge specifically in HTML, CSS, and JavaScript. </p>
+
+            <p>Download...</p>               
+
+            <!--Button-->
+            <button class="view-github" id="contact_button"><a class="view-github" href="https://github.com/ksanchez1234/myCalendar">View GitHub</a></button>
+            <button class="download-code"><a class="download-code" href="images/myCalendar.zip" download="SoftwareDesignCode.zip">Download Code</a></button>
+            <button class="download-review"><a class="download-review" href="images/calendarCode Review.mov" download="CalendarCodeReviewVideo.mov">Download Code Review</a></button>
+            <button class="download-narrative"><a class="download-narrative" href="images/Narrative.Software Design.Eng.docx" download="SoftwareDesignNarrative.docx">Download Narrative</a></button>
+        </div>
+    </div>
+
+    <!--Carousel of Pictures-->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/myCalendar1.png" style="width:100%">
+          <div class="text">Application greets user with message (according to time of day).</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/myCalendar2.png" style="width:100%">
+          <div class="text">Users can schedule events.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/myCalendar3.png" style="width:100%">
+          <div class="text">Events will display on App.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/myCalendar4.png" style="width:100%">
+            <div class="text">Users can delete events.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/myCalendar5.png" style="width:100%">
+            <div class="text">This is a glimpse of the code.</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+     <!--Footer-->
+     <footer>
+        <p>Follow me on Social Media!</p>
+
+        <!--Social Media-->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100001646416730"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/chapiz2014/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/add/karriiiiina"><i class="fab fa-snapchat"></i></a>
+        </div>
+
+        <p>Have a blessed day! -K.S.</p>
+
+    </footer>
+
+
+</body>
+</html>
