@@ -59,7 +59,8 @@ nav ul li a {
 }
 
 /* Contact Me - Container */
-.text-container p {
+/*Title: Contact Me*/
+.title {
   line-height: 0px;
   margin: 45px 0px 25px;
   font-family: calibri;
@@ -68,7 +69,7 @@ nav ul li a {
   color: black;
   font-size: 50px;
 }
-.text-container {
+.title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,15 +85,6 @@ nav ul li a {
 
 button:active {
   transform: scale(1.1);
-}
-
-/* My Image - Contact Me */
-.myImage {
-  height: 560px;
-  position: absolute;
-  bottom: 100px;
-  left: 70%;
-  transform: translateX(-70%);
 }
 
 /* Contact Me Container Section */
